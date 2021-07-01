@@ -70,3 +70,22 @@ sudo pm2 start Aqua
 ```
 sudo pm2 delete Aqua
 ```
+
+## Roadmap / Sugestões
+* Interface & Aplicação:
+  * Mostrar tipo de Água por Local OU agrupar coletas por tipo.
+  * Alterar indicação de parâmetro: Remover o identificador "Parâmetro" e deixar somente algo como "Cloretos 4.6 mg".
+  * Agrupar coletas por ponto de referência nas janelas de resultados de buscas.
+  * Filtrar parâmetros de referência por tipo de água.
+  * Reduzir informações redundantes nas telas de coletas & parâmetros de referência.
+  * Permitir mover janelas de resultados e de referência.
+  * Marcador de água subterrânea: marcador laranja para distinguir águas subterrâneas.
+  * Padronizar a inserção de coordenadas (i.e. não deixar "livre" para o usuário inserir como quiser) 
+  * Utilizar ferramenta como ElasticSearch ou afins para melhorar as capacidades de busca.
+* Database:
+  * Remover informações duplicadas (e.g. responsável?)
+  * Melhoria dos scripts (tratar edge cases)
+  * Parâmetros semelhantes
+* Bugs:
+  *  Relatório não está filtrando coordenada.
+  *  Botão de comparação de parâmetros de ref. não aparece na busca avançada.
