@@ -73,6 +73,9 @@ sudo pm2 delete Aqua
 
 ## Roadmap / Sugestões
 * Interface & Aplicação:
+  * Utilizar ferramenta de search interface como ElasticSearch ou afins para melhorar as capacidades de busca.
+  * Repensar UI - especialmente adotar interface mais moderna para formulário (outras ideias incluem mais opções de saída, tornar mais claros os usos dos botões via tooltips, etc).
+  * Adicionar seleção por área.
   * Mostrar tipo de Água por Local OU agrupar coletas por tipo.
   * Alterar indicação de parâmetro: Remover o identificador "Parâmetro" e deixar somente algo como "Cloretos 4.6 mg".
   * Agrupar coletas por ponto de referência nas janelas de resultados de buscas.
@@ -81,7 +84,6 @@ sudo pm2 delete Aqua
   * Permitir mover janelas de resultados e de referência.
   * Marcador de água subterrânea: marcador laranja para distinguir águas subterrâneas.
   * Padronizar a inserção de coordenadas (i.e. não deixar "livre" para o usuário inserir como quiser) 
-  * Utilizar ferramenta como ElasticSearch ou afins para melhorar as capacidades de busca.
 * Database:
   * Remover informações duplicadas (e.g. responsável?)
   * Melhoria dos scripts (tratar edge cases)
