@@ -3,15 +3,15 @@ var qBuilder = require('../includes/queryBuilder');
 
 var modeloBusca = {
     buscaSimples(latitude, longitude, identificacao, callback){
-      var condition = " WHERE locais_latitude ='" + latitude + "'\
+      var condition = " locais_latitude ='" + latitude + "'\
       AND locais_longitude ='" + longitude + "'\
       AND locais_identificacao='" + identificacao + "';";
 
-      var query = "SELECT * FROM coletas WHERE status = 1" + condition +
-      " SELECT DISTINCT fonte FROM coletas" + condition +
-      " SELECT DISTINCT ano_convertido,mes_convertido,data_coleta FROM coletas" + condition;
-    
-      sqlHandler.connection.query(query, callback(err, result, fields));     
+      var query = "SELECT * FROM coletas WHERE status = 1 AND" + condition +
+      " SELECT DISTINCT fonte FROM coletas WHERE" + condition +
+      " SELECT DISTINCT ano_convertido,mes_convertido,data_coleta FROM coletas WHERE" + condition;
+
+      sqlHandler.connection.query(query, callback);     
     },
 
     buscaAvancada(filtros,callback){
