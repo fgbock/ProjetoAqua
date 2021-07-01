@@ -84,6 +84,7 @@ sudo pm2 delete Aqua
   * Permitir mover janelas de resultados e de referência.
   * Marcador de água subterrânea: marcador laranja para distinguir águas subterrâneas.
   * Padronizar a inserção de coordenadas (i.e. não deixar "livre" para o usuário inserir como quiser) 
+  * Refactoring HTML/CSS: remoção de dead code, melhorias de nomenclatura, refactoring dos scripts clint-side...
 * Database:
   * Remover informações duplicadas (e.g. responsável?)
   * Melhoria dos scripts (tratar edge cases)
